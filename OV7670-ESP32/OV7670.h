@@ -112,7 +112,7 @@ class OV7670{
 #define REG_VER		0x0b	/* Product ID LSB */
 #define REG_COM3	0x0c	/* Control 3 */
 #define  COM3_SWAP		0x40	/* Byte swap */
-#define  COM3_SCALEEN	0x08	/* Enable Scaling */
+#define  COM3_SCALEEN		0x08	/* Enable Scaling */
 #define  COM3_DCWEN		0x04	/* Enable Downsampling/Dropping/Windowing */
 #define REG_COM4	0x0d	/* Control 4 */
 #define  COM4_AEC_FULL		0x00 /* AEC evaluate full window */
@@ -295,7 +295,6 @@ class OV7670{
 #define REG_LCC5	0x66	// Lens Correction Control
 #define REG_MANU	0x67	// Manual U Value
 #define REG_MANV	0x68	// Manual V Value
-
 #define REG_GFIX	0x69	// AWB Pre gain control
 #define REG_GGAIN	0x6a	/* G Channel AWB Gain */
 #define REG_DBLV	0x6b	// PLL control,Regulator control
