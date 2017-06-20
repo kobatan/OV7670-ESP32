@@ -15,7 +15,6 @@
 #define QCIF	4	// 176 x 144
 #define QQCIF	5	//  88 x 72
 
-
 #define	YUV422		0x00	// color mode
 #define	RGB565		0x04
 #define	BAYER_RAW	0x01
