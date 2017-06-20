@@ -98,17 +98,17 @@ class OV7670{
 #define REG_RED		0x02	// AWB Red gain (00-ff)
 #define REG_VREF	0x03	// Pieces of AGC[9:8], VSTOP[1:0], VSTART[1:0]
 #define REG_COM1	0x04	/* Control 1 */
-#define  COM1_CCIR656	0x40	/* CCIR656 enable */
+#define  COM1_CCIR656		0x40	/* CCIR656 enable */
 #define REG_BAVE	0x05	/* U/B Average level */
 #define REG_GbAVE	0x06	/* Y/Gb Average level */
 #define REG_AECHH	0x07	/* AEC MS 5 bits */
 #define REG_RAVE	0x08	/* V/R Average level */
 #define REG_COM2	0x09	/* Control 2 */
-#define  COM2_SSLEEP			0x10	/* Soft sleep mode */
-#define  COM2_OUT_DRIVE_1x		0x00	/* Output drive capability 1x */
-#define  COM2_OUT_DRIVE_2x		0x01	/* Output drive capability 2x */
-#define  COM2_OUT_DRIVE_3x		0x02	/* Output drive capability 3x */
-#define  COM2_OUT_DRIVE_4x		0x03	/* Output drive capability 4x */
+#define  COM2_SSLEEP		0x10	/* Soft sleep mode */
+#define  COM2_OUT_DRIVE_1x	0x00	/* Output drive capability 1x */
+#define  COM2_OUT_DRIVE_2x	0x01	/* Output drive capability 2x */
+#define  COM2_OUT_DRIVE_3x	0x02	/* Output drive capability 3x */
+#define  COM2_OUT_DRIVE_4x	0x03	/* Output drive capability 4x */
 #define REG_PID		0x0a	/* Product ID MSB */
 #define REG_VER		0x0b	/* Product ID LSB */
 #define REG_COM3	0x0c	/* Control 3 */
@@ -116,15 +116,15 @@ class OV7670{
 #define  COM3_SCALEEN	0x08	/* Enable Scaling */
 #define  COM3_DCWEN		0x04	/* Enable Downsampling/Dropping/Windowing */
 #define REG_COM4	0x0d	/* Control 4 */
-#define  COM4_AEC_FULL	0x00 /* AEC evaluate full window */
-#define  COM4_AEC_1_2	0x10 /* AEC evaluate 1/2 window  */
-#define  COM4_AEC_1_4	0x20 /* AEC evaluate 1/4 window  */
-#define  COM4_AEC_2_3	0x30 /* AEC evaluate 2/3 window  */
+#define  COM4_AEC_FULL		0x00 /* AEC evaluate full window */
+#define  COM4_AEC_1_2		0x10 /* AEC evaluate 1/2 window  */
+#define  COM4_AEC_1_4		0x20 /* AEC evaluate 1/4 window  */
+#define  COM4_AEC_2_3		0x30 /* AEC evaluate 2/3 window  */
 #define REG_COM5	0x0e	/* All "reserved" */
 #define REG_COM6	0x0f	/* Control 6 */
-#define  COM6_BLK_LINE	0x80	// Enable HREF at optional black
-#define  COM6_RESET_TIM	0x02	// Reset all timing when format changes
-#define  COM6_RESERVE	0x41	// Reserved bit
+#define  COM6_BLK_LINE		0x80	// Enable HREF at optional black
+#define  COM6_RESET_TIM		0x02	// Reset all timing when format changes
+#define  COM6_RESERVE		0x41	// Reserved bit
 #define REG_AECH	0x10	/* More bits of AEC value */
 #define REG_CLKRC	0x11	/* Clocl control */
 #define  CLK_RSVD		0x80	// Reserved
@@ -132,42 +132,42 @@ class OV7670{
 #define  CLK_SCALE		0x3f	/* Mask for internal clock scale */
 #define REG_COM7	0x12	/* Control 7 */
 #define  COM7_RESET		0x80	/* Register reset */
-#define  COM7_FMT_MASK	0x38
-#define  COM7_FMT_VGA	0x00
-#define  COM7_FMT_CIF	0x20	/* CIF format */
-#define  COM7_FMT_QVGA	0x10	/* QVGA format */
-#define  COM7_FMT_QCIF	0x08	/* QCIF format */
+#define  COM7_FMT_MASK		0x38
+#define  COM7_FMT_VGA		0x00
+#define  COM7_FMT_CIF		0x20	/* CIF format */
+#define  COM7_FMT_QVGA		0x10	/* QVGA format */
+#define  COM7_FMT_QCIF		0x08	/* QCIF format */
 #define  COM7_RGB		0x04	/* bits 0 and 2 - RGB format */
 #define  COM7_YUV		0x00	/* YUV */
 #define  COM7_BAYER		0x01	/* Bayer format */
 #define  COM7_CBAR		0x02	// Color bar
-#define  COM7_PBAYER	0x05	/* "Processed bayer" */
+#define  COM7_PBAYER		0x05	/* "Processed bayer" */
 #define REG_COM8	0x13	/* Control 8 */
-#define  COM8_FASTAEC	0x80	/* Enable fast AGC/AEC */
-#define  COM8_AECSTEP	0x40	/* Unlimited AEC step size */
+#define  COM8_FASTAEC		0x80	/* Enable fast AGC/AEC */
+#define  COM8_AECSTEP		0x40	/* Unlimited AEC step size */
 #define  COM8_BFILT		0x20	/* Band filter enable */
 #define  COM8_RSVD		0x08	// Reserved fefault 1
 #define  COM8_AGC		0x04	/* Auto gain enable */
 #define  COM8_AWB		0x02	// Auto White Balance enable
 #define  COM8_AEC		0x01	/* Auto exposure enable */
 #define REG_COM9	0x14	/* Control 9- gain ceiling */
-#define  COM9_AGC_GAIN_2x		0x00 /* Automatic Gain Ceiling 2x  */
-#define  COM9_AGC_GAIN_4x		0x10 /* Automatic Gain Ceiling 4x  */
-#define  COM9_AGC_GAIN_8x		0x20 /* Automatic Gain Ceiling 8x  */
-#define  COM9_AGC_GAIN_16x		0x30 /* Automatic Gain Ceiling 16x */
-#define  COM9_AGC_GAIN_32x		0x40 /* Automatic Gain Ceiling 32x */
-#define  COM9_AGC_GAIN_64x		0x50 /* Automatic Gain Ceiling 64x  */
-#define  COM9_AGC_GAIN_128x		0x60 /* Automatic Gain Ceiling 128x */
-#define  COM9_AGC_GAIN_NOT		0x70 /* Automatic Gain Ceiling Not allowed */
+#define  COM9_AGC_GAIN_2x	0x00 /* Automatic Gain Ceiling 2x  */
+#define  COM9_AGC_GAIN_4x	0x10 /* Automatic Gain Ceiling 4x  */
+#define  COM9_AGC_GAIN_8x	0x20 /* Automatic Gain Ceiling 8x  */
+#define  COM9_AGC_GAIN_16x	0x30 /* Automatic Gain Ceiling 16x */
+#define  COM9_AGC_GAIN_32x	0x40 /* Automatic Gain Ceiling 32x */
+#define  COM9_AGC_GAIN_64x	0x50 /* Automatic Gain Ceiling 64x  */
+#define  COM9_AGC_GAIN_128x	0x60 /* Automatic Gain Ceiling 128x */
+#define  COM9_AGC_GAIN_NOT	0x70 /* Automatic Gain Ceiling Not allowed */
 #define  COM9_FREEZE_AGC_AEC	0x01
 #define REG_COM10	0x15	/* Control 10 */
-#define  COM10_HSYNC	0x40	/* HSYNC instead of HREF */
-#define  COM10_PCLK_HB	0x20	/* PCLK does not toggle during horizontal blank */
-#define  COM10_PCLK_REV 0x10	// Reverse PCLK
-#define  COM10_HREF_REV	0x08	/* Reverse HREF */
-#define  COM10_VS_LEAD	0x04	/* VSYNC on clock leading edge */
-#define  COM10_VS_NEG	0x02	/* VSYNC negative */
-#define  COM10_HS_NEG	0x01	/* HSYNC negative */
+#define  COM10_HSYNC		0x40	/* HSYNC instead of HREF */
+#define  COM10_PCLK_HB		0x20	/* PCLK does not toggle during horizontal blank */
+#define  COM10_PCLK_REV 	0x10	// Reverse PCLK
+#define  COM10_HREF_REV		0x08	/* Reverse HREF */
+#define  COM10_VS_LEAD		0x04	/* VSYNC on clock leading edge */
+#define  COM10_VS_NEG		0x02	/* VSYNC negative */
+#define  COM10_HS_NEG		0x01	/* HSYNC negative */
 #define REG_HSTART	0x17	/* Horiz start high bits */
 #define REG_HSTOP	0x18	/* Horiz stop high bits */
 #define REG_VSTART	0x19	/* Vert start high bits */
@@ -176,14 +176,14 @@ class OV7670{
 #define REG_MIDH	0x1c	/* Manuf. ID high */
 #define REG_MIDL	0x1d	/* Manuf. ID low */
 #define REG_MVFP	0x1e	/* Mirror / vflip */
-#define  MVFP_MIRROR	0x20	/* Mirror image */
+#define  MVFP_MIRROR		0x20	/* Mirror image */
 #define  MVFP_FLIP		0x10	/* Vertical flip */
-#define  MVFP_BLACK_SUN	0x04	// black sun enable
+#define  MVFP_BLACK_SUN		0x04	// black sun enable
 #define REG_LAEC	0x1f	// Reserved - Fine AEC Value - defines exposure value less than one row period
 #define REG_ADCCTR0	0x20	// ADC range adjustment
-#define REG_ADCCTR1 0x21	// Reserved
-#define REG_ADCCTR2 0x22	// Reserved
-#define REG_ADCCTR3 0x23	// Reserved
+#define REG_ADCCTR1	0x21	// Reserved
+#define REG_ADCCTR2 	0x22	// Reserved
+#define REG_ADCCTR3 	0x23	// Reserved
 #define REG_AEW		0x24	/* AGC upper limit */
 #define REG_AEB		0x25	/* AGC lower limit */
 #define REG_VPT		0x26	/* AGC/AEC fast mode op region */
@@ -205,27 +205,27 @@ class OV7670{
 #define REG_ACOM	0x38	// ADC and Analog Common MOde  Control ( Reserved )
 #define REG_OFON	0x39	// Reserved - ADC Offset Control ( Reserved )
 #define REG_TSLB	0x3a	// Line Buffer Test Option
-#define  TSLB_NEGATE	0x20	// Negative image - see MANU & MANV
+#define  TSLB_NEGATE		0x20	// Negative image - see MANU & MANV
 #define  TSLB_UVOUT		0x10	// Use fixed UV value
 #define  TSLB_YLAST		0x08	/* UYVY or VYUY - see com13 */
 #define  TSLB_AUTO		0x01	// Auto output window
 #define REG_COM11	0x3b	/* Control 11 */
-#define  COM11_NIGHT	0x80	/* NIght mode enable */
+#define  COM11_NIGHT		0x80	/* NIght mode enable */
 #define  COM11_NMFR		0x60	/* Two bit NM frame rate */
-#define  COM11_FR_BY_2	0x20	// 1/2 of normal mode frame rate
-#define  COM11_FR_BY_4	0x40	// 1/4 of normal mode frame rate
-#define  COM11_FR_BY_8	0x60	// 1/8 of normal mode frame rate
-#define  COM11_HZAUTO	0x10	/* Auto detect 50/60 Hz */
+#define  COM11_FR_BY_2		0x20	// 1/2 of normal mode frame rate
+#define  COM11_FR_BY_4		0x40	// 1/4 of normal mode frame rate
+#define  COM11_FR_BY_8		0x60	// 1/8 of normal mode frame rate
+#define  COM11_HZAUTO		0x10	/* Auto detect 50/60 Hz */
 #define  COM11_50HZ		0x08	/* Manual 50Hz select */
 #define  COM11_EXP		0x02	// Exposure timing can be less than limit of banding filter when light is too strong
 #define REG_COM12	0x3c	/* Control 12 */
 #define  COM12_HREF		0x80	/* HREF always */
 #define  COM12_RSVD		0x68	// reserved bit
 #define REG_COM13	0x3d	/* Control 13 */
-#define  COM13_GAMMA	0x80	/* Gamma enable */
-#define  COM13_UVSAT	0x40	/* UV saturation auto adjustment */
-#define  COM13_UVSWAP	0x01	/* V before U - w/TSLB */
-#define  COM13_RESV		0x08		// reserved bit
+#define  COM13_GAMMA		0x80	/* Gamma enable */
+#define  COM13_UVSAT		0x40	/* UV saturation auto adjustment */
+#define  COM13_UVSWAP		0x01	/* V before U - w/TSLB */
+#define  COM13_RESV		0x08	// reserved bit
 #define REG_COM14	0x3e	/* Control 14 */
 #define  COM14_DCWEN		0x10	// DCW/PCLK-scale enable */
 #define  COM14_MANUAL		0x08	// Manual scaling enable
@@ -236,11 +236,11 @@ class OV7670{
 #define  COM14_PCLKDIV_16	0x04	// PCLK Divided by 16
 #define REG_EDGE	0x3f	/* Edge enhancement factor */
 #define REG_COM15	0x40	/* Control 15 */
-#define  COM15_R10F0	0x00	/* Data range 10 to F0 */
-#define  COM15_R01FE	0x80	/*			01 to FE */
-#define  COM15_R00FF	0xc0	/*			00 to FF */
-#define  COM15_RGB565	0x10	/* RGB565 output */
-#define  COM15_RGB555	0x30	/* RGB555 output */
+#define  COM15_R10F0		0x00	/* Data range 10 to F0 */
+#define  COM15_R01FE		0x80	/*			01 to FE */
+#define  COM15_R00FF		0xc0	/*			00 to FF */
+#define  COM15_RGB565		0x10	/* RGB565 output */
+#define  COM15_RGB555		0x30	/* RGB555 output */
 #define REG_COM16	0x41	/* Control 16 */
 #define  COM16_YUV_ENHANC	0x20
 #define  COM16_DE_NOISE		0x10	//
@@ -309,23 +309,24 @@ class OV7670{
 #define REG_AWBCTR2	0x6d	/* AWB Control 2 */
 #define REG_AWBCTR1	0x6e	/* AWB Control 1 */
 #define REG_AWBCTR0	0x6f	/* AWB Control 0 */
-#define REG_SCALING_XSC		0x70	// test pattern, Horizontal scale factor
-#define REG_SCALING_YSC		0x71	// test pattern, Vertical scale factor
-#define REG_SCALING_DCWCTR	0x72	// DCW Control
+#define REG_SCALING_XSC	0x70	// test pattern, Horizontal scale factor
+#define REG_SCALING_YSC	0x71	// test pattern, Vertical scale factor
+#define REG_SCALING_DCWCTR 0x72	// DCW Control
 #define  SCALING_DCWCTR_VDS_by_2	0x10	// Vertical Down Sampling rate by 2
 #define  SCALING_DCWCTR_VDS_by_4	0x20	// Vertical Down Sampling rate by 4
 #define  SCALING_DCWCTR_VDS_by_8	0x30	// Vertical Down Sampling rate by 8
 #define  SCALING_DCWCTR_HDS_by_2	0x01	// Horizontal Down Sampling rate by 2
 #define  SCALING_DCWCTR_HDS_by_4	0x02	// Horizontal Down Sampling rate by 2
 #define  SCALING_DCWCTR_HDS_by_8	0x03	// Horizontal Down Sampling rate by 2
+
 #define REG_SCALING_PCLK_DIV 0x73	// Clock divider control for DSP scale
-#define  SCALING_PCLK_DIV_RSVD	0xf0	// Reserved
-#define  SCALING_PCLK_DIV_DIS	0x08	// Bypass clock divider
+#define  SCALING_PCLK_DIV_RSVD		0xf0	// Reserved
+#define  SCALING_PCLK_DIV_DIS		0x08	// Bypass clock divider
 #define  SCALING_PCLK_DIV_1		0x00	// Divided by 1
 #define  SCALING_PCLK_DIV_2		0x01	// Divided by 2
 #define  SCALING_PCLK_DIV_4		0x02	// Divided by 4
 #define  SCALING_PCLK_DIV_8		0x03	// Divided by 8
-#define  SCALING_PCLK_DIV_16	0x04	// Divided by 16
+#define  SCALING_PCLK_DIV_16		0x04	// Divided by 16
 #define REG_REG74	0x74	// Digital gain manual control
 #define REG_REG75	0x75	// Edge enhanced lower limit
 #define REG_REG76	0x76	/* OV's name */
