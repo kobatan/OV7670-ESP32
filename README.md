@@ -31,9 +31,10 @@ Web 送信は　Websocket を使いました。これは[mgo-tec電子工作さ�
 |  D7    | IO26  |
 |  XCLK  | IO27 or ather|
 |  PCLK  | IO14  |
+|  HREF  |  NC   |
 |  VSYNC | IO13  |
 |  SIOD  | IO21  |
 |  SIOC  | IO22  |
 |  RESET | 3.3V  |
 |  PWDN  | GND   |
-|  HREF  |  NC   |
+
