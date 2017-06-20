@@ -13,9 +13,7 @@ ESP32のメモリーでもカメラの1フレーム（1画面）分を処理す�
 
 Live Camera にも挑戦しています。サンプルを実行して見て下さい。
 
-Web 送信は　Websocket を使いました。
-
-これは[mgo-tec電子工作さんのブログ](https://www.mgo-tec.com/blog-entry-websocket-handshake.html "mgo-tec")をかなり参考にさせて頂きました。  
+Web 送信は　Websocket を使いました。これは[mgo-tec電子工作さんのブログ](https://www.mgo-tec.com/blog-entry-websocket-handshake.html "mgo-tec")をかなり参考にさせて頂きました。  
   
 サーボサンプルは、webから画像を見ながらカメラを上下左右に動かせるようにしています。
   
