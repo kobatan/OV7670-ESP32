@@ -29,7 +29,6 @@ struct regval_list{
 };
 
 class OV7670{
-	// クラスメンバー関数
 	public:
 		OV7670(void);
 		~OV7670(void);
