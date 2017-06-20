@@ -8,10 +8,10 @@
 #include "esp_attr.h"
 #include "I2Scamera.h"
 
-#define	VGA		0	// 640 x 480
+#define	VGA	0	/ 640 x 480
 #define	QVGA	1	// 320 X 240
 #define	QQVGA	2	// 160 x 120
-#define CIF		3	// 352 x 288
+#define CIF	3	// 352 x 288
 #define QCIF	4	// 176 x 144
 #define QQCIF	5	//  88 x 72
 
@@ -104,7 +104,7 @@ class OV7670{
 #define REG_AECHH	0x07	/* AEC MS 5 bits */
 #define REG_RAVE	0x08	/* V/R Average level */
 #define REG_COM2	0x09	/* Control 2 */
-#define  COM2_SSLEEP				0x10	/* Soft sleep mode */
+#define  COM2_SSLEEP			0x10	/* Soft sleep mode */
 #define  COM2_OUT_DRIVE_1x		0x00	/* Output drive capability 1x */
 #define  COM2_OUT_DRIVE_2x		0x01	/* Output drive capability 2x */
 #define  COM2_OUT_DRIVE_3x		0x02	/* Output drive capability 3x */
@@ -300,11 +300,11 @@ class OV7670{
 #define REG_GFIX	0x69	// AWB Pre gain control
 #define REG_GGAIN	0x6a	/* G Channel AWB Gain */
 #define REG_DBLV	0x6b	// PLL control,Regulator control
-#define  DBLV_BYPASS	0x00		// Bypass PLL
-#define  DBLV_CLK_x4	0x40		// input clock x4
-#define  DBLV_CLK_x6	0x80		// input clock x6
-#define  DBLV_CLK_x8	0xC0		// input clock x8
-#define  DBLV_RSVD		0x0A		// reserved bit
+#define  DBLV_BYPASS		0x00	// Bypass PLL
+#define  DBLV_CLK_x4		0x40	// input clock x4
+#define  DBLV_CLK_x6		0x80	// input clock x6
+#define  DBLV_CLK_x8		0xC0	// input clock x8
+#define  DBLV_RSVD		0x0A	// reserved bit
 #define REG_AWBCTR3	0x6c	/* AWB Control 3 */
 #define REG_AWBCTR2	0x6d	/* AWB Control 2 */
 #define REG_AWBCTR1	0x6e	/* AWB Control 1 */
@@ -329,8 +329,8 @@ class OV7670{
 #define REG_REG74	0x74	// Digital gain manual control
 #define REG_REG75	0x75	// Edge enhanced lower limit
 #define REG_REG76	0x76	/* OV's name */
-#define  R76_BLKPCOR	0x80	/* Black pixel correction enable */
-#define  R76_WHTPCOR	0x40	/* White pixel correction enable */
+#define  R76_BLKPCOR		0x80	/* Black pixel correction enable */
+#define  R76_WHTPCOR		0x40	/* White pixel correction enable */
 #define REG_REG77	0x77	// Offset, de-noise range control
 // 0x7a - 0x89 Ganma Curve registor
 #define REG_SLOP	0x7a	// SLOP = (256-GAM15)x40/30
@@ -351,8 +351,8 @@ class OV7670{
 #define REG_GAM15	0x89	// XREF15 208
 
 #define REG_RGB444	0x8c	/* RGB 444 control */
-#define  R444_DISABLE	0x00
-#define  R444_ENABLE	0x02	/* Turn on RGB444, overrides 5x5 */
+#define  R444_DISABLE		0x00
+#define  R444_ENABLE		0x02	/* Turn on RGB444, overrides 5x5 */
 #define  R444_RGBX		0x01	/* Empty nibble at end */
 #define REG_DM_LNL	0x92	// Dummy Row low 8bit
 #define REG_DM_LNH	0x93	// Dummy Row high 8bit
@@ -372,10 +372,10 @@ class OV7670{
 #define REG_SCALING_PCLK_DELAY	0xa2	// Pixel Clock Delay
 
 #define REG_NT_CTRL	0xa4	// Auto frame rate adjustment
-#define	 NT_CTRL_ROWPF	0x08	// Auto frame rate adjust dummy row per frame
-#define  NT_CTRL_DMR_2x	0x00	// insert dummy row at 2x gain
-#define  NT_CTRL_DMR_4x	0x01	// insert dummy row at 4x gain
-#define  NT_CTRL_DMR_8x	0x02	// insert dummy row at 28 gain
+#define	 NT_CTRL_ROWPF		0x08	// Auto frame rate adjust dummy row per frame
+#define  NT_CTRL_DMR_2x		0x00	// insert dummy row at 2x gain
+#define  NT_CTRL_DMR_4x		0x01	// insert dummy row at 4x gain
+#define  NT_CTRL_DMR_8x		0x02	// insert dummy row at 28 gain
 
 #define REG_BD50MAX	0xa5	// 50hz banding step limit
 #define REG_HAECC3	0xa6	// Hist AEC/AGC control 3
