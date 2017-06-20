@@ -8,7 +8,7 @@
 #include "esp_attr.h"
 #include "I2Scamera.h"
 
-#define	VGA	0	/ 640 x 480
+#define	VGA	0	// 640 x 480
 #define	QVGA	1	// 320 X 240
 #define	QQVGA	2	// 160 x 120
 #define CIF	3	// 352 x 288
