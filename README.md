@@ -3,7 +3,7 @@
 
 <img src="https://user-images.githubusercontent.com/29562647/27361020-a03662d2-565f-11e7-810f-891ff1fdd118.jpg" width="300px">
 
-カメラモジュール OV7670(FIFO無し) の ESP32 Arduino用 ライブラリーを作ってみました。
+## カメラモジュール OV7670(FIFO無し) の ESP32 Arduino用 ライブラリーを作ってみました。
 
 https://github.com/igrr/esp32-cam-demo を参考に、OV7670用に変更しています。
 
