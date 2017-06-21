@@ -42,4 +42,5 @@ Web 送信は　Websocket を使いました。これは[mgo-tec電子工作さ�
 |  RESET | 3.3V  |
 |  PWDN  | GND   |
 
-<img src="https://user-images.githubusercontent.com/29562647/27368192-1151737c-568c-11e7-9462-157e4ea34f8b.jpg" width="300px">
+<img src="https://user-images.githubusercontent.com/29562647/27368192-1151737c-568c-11e7-9462-157e4ea34f8b.jpg" width="300px"><img src="https://user-images.githubusercontent.com/29562647/27368195-1680f66a-568c-11e7-9371-fc8bb033725d.jpg" width="300px">
+
