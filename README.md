@@ -11,7 +11,7 @@ FIFO無しでどこまで出来るか挑戦してみました。
 
 ESP32のメモリーでもカメラの1フレーム（1画面）分を処理するのは難しかったので、1ラインづつ読込み表示するようにしています。
 
-<img src="https://user-images.githubusercontent.com/29562647/27361033-b3c29f0a-565f-11e7-800c-c119fbbc370f.jpg" width="300px">
+<img src="https://user-images.githubusercontent.com/29562647/27361033-b3c29f0a-565f-11e7-800c-c119fbbc370f.jpg" width="300px"><img src="https://user-images.githubusercontent.com/29562647/27361038-b90c5d0c-565f-11e7-9309-e94112c63012.jpg" width="300px">
 
 サンプルのTFT液晶に表示では、結構リアルタイムに表示出来ていると思います。
 
