@@ -1,5 +1,5 @@
 # OV7670-ESP32
-## OV7670 (non FIFO) Library for ESP32 Arduino
+## OV7670 (non FIFO) Camera Library for ESP32 Arduino
 
 <img src="https://user-images.githubusercontent.com/29562647/27361020-a03662d2-565f-11e7-810f-891ff1fdd118.jpg" width="300px">
 
